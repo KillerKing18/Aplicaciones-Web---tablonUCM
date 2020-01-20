@@ -1,0 +1,1260 @@
+/* width */
+::-webkit-scrollbar {
+	width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey; 
+	border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: rgb(84, 209, 192); 
+	border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: rgb(135, 211, 201); 
+  }
+  
+  ::-webkit-scrollbar-corner { 
+	  background: rgb(84, 209, 192); 
+	}
+
+body {
+	margin: 0px; padding: 0px;
+	font-family: georgia, times, serif;
+	background-color: rgb(243, 176, 87);
+}
+/* CABECERAS */
+.logo {
+height: 75px;
+width: 100px;
+padding-right: 30px;
+}
+
+div.contenido {
+	background-image: url("../img/pagina/tablonUCMLogoTransparente.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 50% 100px;
+	background-size: 60%;
+}
+
+div#cabecera, div#cabeceraLogin {
+padding: 1rem 0;
+background-color: #303030;
+position: fixed;
+left: 0;
+top: 0;
+width: 100%;
+}
+
+.active {
+background-color: rgb(250, 158, 53); /* Add an active/current color */
+}
+
+.container-header {
+width: 90%;
+margin-left: 5%;
+margin-right: 5%;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+color: white;
+}
+
+.container-header#normal {
+justify-content: space-between;
+}
+
+.container-header#login {
+justify-content: center;
+}
+
+div#nombreylogo {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+align-items: center;
+width: 50%;
+}
+
+div#cabecera a, div#cabecera a:visited {
+color: white;
+font-weight: bold;
+text-decoration: none;
+} 
+
+div#cabecera a:hover {
+color: red;
+font-weight: bold;
+text-decoration: underline;
+} 
+
+.icon-bar {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+align-items: center;
+width: 50%;
+}
+
+.icon-bar a {
+border-radius: 10px;
+text-align: center; /* Center-align text */
+width: 14.28%; /* Equal width (5 icons with 20% width each = 100%) */
+padding: 12px 0px; /* Some top and bottom padding */
+transition: all 0.3s ease; /* Add transition for hover effects */
+color: white; /* White text color */
+font-size: 36px; /* Increased font size */
+}
+
+.icon-bar i {
+color: white; /* White text color */
+font-size: 36px; /* Increased font size */
+}
+
+.icon-bar a:hover {
+background-color: #000; /* Add a hover color */
+}
+/* CONTENIDO */
+div#contenedor {
+padding-top: 7rem;
+}
+
+div#contenedor-resultadoApuntes {
+padding-top: 8rem;
+}
+
+div#editarEvento, div.contenido#resultadoEvento, div.contenido#busquedaAsignatura, div.contenido#reportes, div.contenido#reporte, div.contenido#reporteEvento, div.contenido#administracion, div.contenido#administracionBBDD, div.contenido#perfilAjeno, div#divMensajes, div.contenido#buscador, div.contenido#upload, div.contenido#logout, div#archivo, div#file-not-found, div#editarArchivo, div.contenido#apuntes, div.contenido#inicio, div.contenido#eventos, div.contenido#perfil {
+margin: 0 auto;
+background-color: rgb(84, 209, 192);
+padding-top: 30px;
+padding-bottom: 30px;
+border-style: solid;
+border-color: grey;
+border-radius: 5px;
+margin-top: 15px;
+margin-bottom: 15px;
+text-align: left;
+}
+
+div.login#divMensajes, div.registro#divMensajes {
+width: 40% !important;
+}
+
+div#divMensajes {
+width: 60% !important;
+padding-top: 10px !important;
+padding-bottom: 10px !important;
+}
+
+p#mensajeValidacion {
+text-align: center;
+font-weight: bold;
+margin-top: 16px !important;
+margin-bottom: 16px !important;
+}
+
+p.novedad {
+margin-top: 0px !important;
+margin-bottom: 0px !important;
+}
+
+div.novedad {
+border-style: solid;
+border-color: grey;
+padding-top: 15px;
+padding-bottom: 15px;
+border-radius: 5px;
+margin-top: 15px;
+margin-bottom: 15px;
+text-align: center;
+}
+
+div.novedades {
+width: 70%;
+}
+
+div.novedad {
+background-color: rgb(243, 176, 87) !important;
+}
+
+div.exito {
+background-color: rgb(43, 179, 43) !important;
+border-color: rgb(43, 179, 43) !important;
+}
+
+div.fracaso {
+background-color: rgb(218, 42, 30) !important;
+border-color: rgb(218, 42, 30) !important;
+}
+
+div.contenido#resultadoArchivo {
+margin: 0 auto;
+}
+
+div#editarEvento, div.contenido#resultadoEvento, div.contenido#reportes, div.contenido#reporte, div.contenido#reporteEventoUsuario, div.contenido#administracion, div.contenido#administracionBBDD, div.contenido#perfilAjeno, div.contenido#perfilAjeno div, div#editarArchivo, div.contenido#perfil div, div.contenido#perfil, div.contenido#buscador, div.contenido#resultadoArchivo, div.contenido#busquedaAsignatura, div.contenido#upload, div.contenido#logout, div.contenido#apuntes, div.contenido#inicio, div.contenido#eventos {
+width: 80%;
+}
+
+button[type=submit].cambiar {
+	padding: 5px 10px !important;
+	margin: 8px 8px !important;
+}
+
+.edicionArchivo, .edicionEvento {
+margin-left: 5% !important;
+}
+
+div.form-borrarCuenta p {
+text-align: center;
+}
+
+.ui-button {
+padding: 0px !important;
+}
+
+.ui-state-active, .ui-button {
+border: none !important;
+background: none !important;
+}
+
+div.info {
+margin-bottom: 3%;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+align-items: center;
+justify-content: center;
+}
+
+div.contenido#perfil h2 {
+	text-align: center !important;
+}
+
+form#form-borrarCuenta, form#form-borrarReporte {
+	text-align: center;
+}
+
+button#borrar, button#borrarBBDD {
+background-color: rgb(224, 34, 34);
+color: white;
+padding: 10px 15px;
+margin: 8px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+div.contenido#perfil, div.contenido#perfilAjeno {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+div.resultado-archivo {
+height: 125px;
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+justify-content: space-between;
+align-items: center;
+margin-top: 20px;
+margin-bottom: 20px;
+text-align: center;
+}
+
+div.div-validacion {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+align-items: center;
+}
+
+div.div-validacion input {
+width: 100%;
+}
+
+span.iconoValidacion {
+margin-left: 15px;
+}
+
+span img {
+height: 20px;
+width: 20px;
+}
+
+button#apuntarEvento {
+margin-bottom: 30px !important;
+}
+
+span#average {
+display: flex;
+align-items: center;
+}
+
+
+div#display-evento {
+width: 80%;
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+align-items: center;
+}
+
+div#foto-datos-evento {
+width: 100%;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+align-items: center;
+}
+
+div#boton-datos-evento {
+width: 30%;
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+align-items: center;
+}
+
+div#datos-evento {
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+}
+
+div#foto-datos-evento img {
+width: 70%;
+height: 100%;
+}
+
+div.contenido#resultadoEvento {
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+align-items: center;
+}
+
+div#descripcion-text, div#observaciones-text {
+border-style: solid;
+border-color: black;
+padding-left: 2%;
+padding-right: 2%;
+}
+
+div#archivo {
+padding-top: 0px !important;
+padding-bottom: 0px !important;
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+border-style: solid;
+border-color: black;
+}
+
+div#preview-info {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+}
+
+embed.embed{
+width: 100%;
+height: 100%;
+}
+
+div#descripcion-evento, div#observaciones-file, div#reporte-file, div#reporte-display, div#reporte-event {
+width: 96%;
+margin-left: auto;
+margin-right: auto;
+}
+
+div#reporte-file, div#reporte-event {
+margin-top: 10px;
+margin-bottom: 30px;
+}
+
+div#file-preview {
+width: 70%;
+height: auto;
+border-bottom-style: solid;
+border-right-style: solid;
+border-color: black;
+}
+
+div#button-descargar-archivo {
+text-align: center;
+margin-bottom: 10px;
+}
+
+div#file-info {
+width: 30%;
+border-bottom-style: solid;
+border-color: black;
+}
+
+.star-img {
+height: 25px;
+width: 25px;
+}
+
+div#file-info-contenido {
+width: 76%;
+height: 88%;
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+padding-left: 12%;
+padding-right: 12%;
+padding-top: 12%;
+padding-bottom: 12%;
+}
+
+div#file-info label, div#reporte-file label, div#reporte-user label, div#reporte-event label {
+font-size: 19px !important;
+font-weight: bolder !important;
+}
+
+div#reporte-display label {
+font-size: 19px !important;
+}
+
+div#reporte-file label, div#reporte-user label, div#reporte-display label, div#reporte-event label {
+margin-bottom: 10px !important;
+margin-top: 5px !important;
+}
+
+div.contenido#inicio a, div.contenido#inicio a:visited, a.lugar-evento, a.lugar-evento:visited, a.categoria-evento, a.categoria-evento:visited, a.creador-evento, a.creador-evento:visited, div#file-info a.autor-archivo, div#file-info a.autor-archivo:visited, a.asignatura-archivo, a.asignatura-archivo:visited {
+text-decoration: none;
+color: rgb(33,56,158);
+font-weight: bold;
+}
+
+p#descripcion {
+margin-top: 0px !important;
+width: 70%;
+text-align: justify !important;
+}
+
+p#descripcionEvento {
+font-weight: normal !important;
+text-align: justify !important;
+margin-top: 0px !important;
+margin-bottom: 40px !important;
+}
+
+div.contenido#inicio p {
+margin-top: 50px;
+font-weight: bold;
+}
+
+div.contenido#inicio {
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+align-items: center;
+}
+
+img#logo-inicio {
+width: 30%;
+}
+
+div#editor {
+margin-bottom: 15px;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-around;
+width: 100%;
+}
+
+div.categoria {
+width: 20%;
+}
+
+div.resultado-archivo#more {
+margin-top: 40px;
+margin-bottom: 40px;
+height: 0px;
+}
+
+div.resultado-archivo a, a.categoria {
+color: rgb(33, 56, 158);
+text-decoration: none;
+}
+
+div.resultado-archivo img {
+height: 100px;
+width: 100px;
+}
+
+div.contenido#apuntes label {
+text-align: center;
+}
+
+p#asignaturaMarcada {
+margin-bottom: 50px;
+}
+
+div#datos, div#imagenPerfil, div#imagenPerfilAjeno {
+height: 250px !important;
+width: 50% !important;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+div#datosIzquierda, div#datosDerecha {
+width: 50% !important;
+}
+
+img#textoPagina {
+width: 25%;
+}
+
+div#observaciones-text, div#descripcion-text, div#texto-reporte {
+overflow: scroll;
+}
+
+div#texto-reporte {
+	width: 80% !important;
+	border-color: black;
+	border-style: solid;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+div#imagenPerfilAjeno img{
+height: 200px !important;
+width: 200px !important;
+}
+
+div#imagenPerfil, div#imagenPerfilAjeno {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: center;
+}
+
+div#imagenPerfilAjeno {
+justify-content: center;
+}
+
+div#imagenPerfil img {
+height: 200px;
+width: 200px;
+}
+
+div.info img {
+margin-right: 10%;
+}
+
+div#inputs-perfil p {
+margin-bottom: 0px !important;
+}
+
+div#usuario-email {
+height: 280px;
+}
+
+div.form-password {
+height: 280px;
+}
+
+div.div-validacion {
+width: 100% !important;
+}
+
+div.resultados-categoria {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin: 20px;
+text-align: center;
+}
+
+div.rate {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+margin-top: 16px;
+}
+
+div.resultados-categoria#none {
+justify-content: center;
+}
+
+div.contenido#resultadoArchivo h2, div#reporte-display h2, div.contenido#busquedaAsignatura h2 {
+text-align: center;
+color: rgb(33, 56, 158);
+}
+
+div.contenido#resultadoArchivo h4, div.contenido#busquedaAsignatura h4 {
+text-align: center;
+}
+
+div.contenido#busquedaAsignatura h1 {
+text-align: center;
+}
+
+button#button-descargar-zip-asignatura-general {
+margin-bottom: 30px;
+}
+
+label#header {
+color: black;
+font-size: 22px;
+font-weight: bold;
+}
+
+a.file, a.autor, a.emisor, a.receptor, a.evento, a.reporte, a.asignatura {
+text-decoration: none;
+color: rgb(33, 56, 158);
+font-weight: bold;
+}
+
+div.item-evento label {
+text-align: center;
+}
+
+div.form-borrarCuenta {
+	margin-top: 20px;
+}
+
+div#editarEvento h1, h1#titulo-evento-secundario, div.contenido#resultadoEvento h1, div.contenido#reportes h1, div#file-not-found h1, div#report-not-found h1, div#search-not-found h1, div.contenido#perfilAjeno h1, div.contenido#logout h1, div.contenido#upload h1, div#editarArchivo h1, div.contenido#apuntes h1, div.contenido#inicio h1, div.contenido#perfil h1 {
+text-align: center;
+color: rgb(33, 56, 158);
+}
+
+div.contenido#administracion h1, div.contenido#administracionBBDD h1, h1#titulo-evento-principal {
+font-size: 45px;
+color: black;
+text-align : center;
+}
+
+div.contenido#inicio h1 {
+font-size: 45px !important;
+}
+
+div.contenido#inicio h2 {
+font-size: 35px !important;
+text-align : center;
+}
+
+div.contenido#administracion h2, div.contenido#perfilAjeno h2, div.contenido#administracionBBDD h2, div.contenido#eventos h2 {
+text-align: center;
+color: rgb(33, 56, 158);
+}
+
+div#editarEvento p, div.contenido#reportes p, div.contenido#administracion p, div.contenido#administracionBBDD p, div.contenido#eventos p, div#editarArchivo p, div#search-not-found p, div#file-not-found p, div#report-not-found p, div.contenido#perfilAjeno p, div.contenido#eventos p, div.contenido#apuntes p {
+margin-top: 50px;
+text-align: center;
+font-weight: bold;
+}
+
+div.contenido#administracionBBDD input {
+padding: 8px 20px;
+width: 30%;
+text-align: center;
+margin-bottom: 20px;
+}
+
+div.contenido#administracionBBDD select {
+width: 30% !important;
+}
+
+div.contenido#administracionBBDD label, div.contenido#resultadoEvento label {
+font-size: 19px !important;
+font-weight: bolder !important;
+}
+
+form#form-asignatura {
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+align-items: center;
+}
+
+form#form-borrarBBDD, form#form-asignaturaBBDD, form#form-borrarAsignaturaBBDD, form#form-borrarCursoBBDD, form#form-borrarGradoBBDD, form#form-facultadBBDD, form#form-borrarFacultadBBDD, form#form-gradoBBDD, form#form-cursoBBDD, form#form-evento {
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+align-items: center;
+}
+
+div.contenido#administracionBBDD p {
+margin-top: 30px !important;
+margin-bottom: 30px !important;
+}
+
+div.contenido#administracion p, div.contenido#eventos p {
+margin-bottom: 50px;
+}
+
+div.contenido#administracion p#ultimoParrafo {
+margin-bottom: 0px !important;
+}
+
+p#separacionParrafo {
+margin-bottom: 50px;
+}
+
+div.contenido#eventos div#observaciones {
+height: 100%;
+}
+
+p#borradoCuenta {
+margin-top: 35px !important;
+}
+
+div#inputs-perfil {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+align-items: center;
+}
+
+div#usuario-email {
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+justify-content: center;
+}
+
+div.contenido#logout button {
+text-align: center;
+}
+
+div.contenido#buscador, div.busqueda {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+}
+
+div.contenido#upload {
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+}
+
+div#div-descargar-zip-asignatura, div#div-descargar-zip-categoria, div#div-marcar-asignatura {
+text-align: center;
+}
+
+div.formulario-upload {
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+}
+
+div#file-upload {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: center;
+margin-bottom: 10px;
+margin-top: 10px;
+}
+
+div#file-upload input{
+width: 58%;
+margin-right: 1%;
+}
+
+div#file-upload button{
+width: 9%;
+}
+
+div#info-file-upload, form#form-evento {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: center;	
+}
+
+div#selectores-upload, div#campos-evento {
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+justify-content: space-around;
+width: 25%;
+padding-left: 2%;
+padding-right: 2%;
+}
+
+div#observaciones {
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+width: 40%;
+padding-left: 2%;
+padding-right: 2%;
+}
+
+div#descripcion-evento p, div#observaciones p, div#observaciones-file p, div#reporte-display p {
+text-align: justify;
+}
+div#reporte-display {
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+align-items: center;
+}
+
+div#texto-reporte {
+display: flex;
+justify-content: center;
+width: 80%;
+height: auto;
+}
+
+div#texto-reporte {
+width: 100%;
+height: auto;
+}
+
+div#reporte-file textarea, div#reporte-user textarea, div#observaciones textarea, div.form-observacionesArchivo textarea, div#reporte-event textarea, div.form-descripcionEvento textarea {
+height: 50%;
+margin: 8px 0px;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid rgb(94, 160, 221);
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+div#camposObservacionesArchivo, div#camposNombreArchivo, div#camposNombreEvento, div#camposLugarEvento, div#camposHoraEvento, div#camposDescripcionEvento {
+height: 80% !important;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+align-items: center;
+}
+
+div#camposFechaEvento {
+height: 80% !important;
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+}
+
+div.contenido#editarEvento input#datepicker {
+width: 85% !important;
+}
+
+div.form-observacionesArchivo textarea, div.form-descripcionEvento textarea {
+height: 85% !important;
+width: 100% !important;
+}
+
+div#textAreaIconoCambioObservaciones, div#inputIconoCambioNombre, div#inputIconoCambioLugar, div#textAreaIconoCambioDescripcion {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+align-items: center;
+width: 85%;
+}
+
+div#submit-button, div#submit-button-evento {
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+align-items: center;
+}
+
+div#submit-button button {
+width: 20%;
+}
+
+div#descripcion-evento, div#observaciones-file h2, div#reporte-file h2, div#reporte-event h2 {
+text-align: left !important;
+}
+
+div.contenido#buscador h2 {
+text-align: center;
+}
+
+.formulario-buscador {
+width: 25%;
+}
+
+div.resultados {
+width: 18.75%;
+border-left: 1px solid black;
+}
+
+div.resultadosGeneral {
+width: 25%;
+border-left: 1px solid black;
+}
+
+div.resultadosGeneral:first-child {
+border-left: 0px solid black;
+}
+
+div.resultados h2 {
+color: rgb(33, 56, 158);
+}
+
+.buscador {
+padding-left: 20px;
+padding-right: 20px;
+}
+
+.item-archivo, .item-reporte, .info-reporte, .item-asignatura, .item-evento {
+padding-top: 20px;
+padding-bottom: 20px;
+height: 60px;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-around;
+width: 100%;
+}
+
+.item-archivo#header, .item-reporte#header, .info-reporte, .item-asignatura#header, .item-evento#header {
+padding-bottom: 0px !important;
+height: 50px;
+}
+
+div.contenido#reporte label {
+text-align: center;
+}
+
+div.nombre-evento, div.categoria-evento, div.lugar-evento, div.fecha-evento, div.asistentes-evento, div.referenciado-reporte-display, div.emisor-reporte-display, div.fecha-reporte-display, div.archivo-reporte, div.asunto-reporte, div.evento-reporte, div.emisor-reporte, div.receptor-reporte, div.fecha-reporte, div.nombre-archivo, div.observaciones-archivo, div.fecha-archivo, div.tamanio-archivo, div.formato-archivo, div.autor-archivo, div.nombre-asignatura, div.curso-asignatura, div.grado-asignatura, div.facultad-asignatura {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+div.referenciado-reporte-display, div.emisor-reporte-display, div.fecha-reporte-display {
+width: 25%;
+}
+
+div.evento-reporte, div.nombre-evento, div.categoria-evento, div.lugar-evento, div.fecha-evento, div.asistentes-evento, div.archivo-reporte, div.asunto-reporte, div.emisor-reporte, div.receptor-reporte, div.fecha-reporte {
+width: 18.75%;
+}
+
+div.nombre-archivo, div.observaciones-archivo, div.fecha-archivo, div.tamanio-archivo, div.formato-archivo, div.autor-archivo {
+width: 15%;
+}
+
+div.nombre-asignatura, div.curso-asignatura, div.grado-asignatura, div.facultad-asignatura {
+width: 18.75%;
+}
+
+/* PIE */
+div#pie {
+clear: both;
+padding: 20px;
+color: black;
+text-align: center;
+}
+/*LOGIN Y REGISTRO*/
+input[type=text], input[type=password], input[type=email] {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid rgb(94, 160, 221);
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+div#reporte-file input, div#reporte-user input, div#reporte-event input {
+width: 50%;
+margin-top: 0px;
+}
+
+div#reporte-file textarea, div#reporte-user textarea, div#reporte-event textarea, div#reporte-event textarea {
+width: 80%;
+}
+
+div#reporte-file form#form-reporte-archivo, div#reporte-user form#form-reporte-usuario, div#reporte-event form#form-reporte-evento {
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+justify-content: space-between;
+}
+
+div#reporte-user form#form-reporte-usuario {
+align-items: center;
+}
+
+input#archivoCambioNombre {
+width: 100% !important;
+}
+
+input#upload-selected {
+background-color: white;
+}
+
+select {
+cursor: pointer;
+width: 100%;
+padding: 8px 12px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid rgb(94, 160, 221);
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+button#reporte {
+width: 10%;
+}
+
+button#nombreEvento, button#lugarEvento, button#fechaEvento, button#descripcionEvento, button#reporte, button#nombreArchivo, button#observacionesArchivo, button#subirImagen, button[type=submit]#registro, button[type=submit].cambiar, button[type=submit]#login, button[type=submit]#button-logout, button#examinar, button#subir, button.button-descargar-zip, button#button-descargar-archivo {
+background-color: rgb(94, 160, 221);
+color: white;
+padding: 10px 15px;
+margin: 8px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+button#button-descargar-archivo {
+background-color: rgb(51, 194, 82);
+}
+
+button#button-descargar-archivo:hover {
+background-color: rgb(18, 112, 39);
+}
+
+button#button-descargar-archivo {
+width: 50%;
+}
+
+button#todosArchivosUsuario, button#apuntarEvento, button#crearEvento, button[type=submit]#buscar, button#todosArchivos, button#todosEventos, button#todosEventosCreados, button#todosEventosApuntados, button#todosReportes, button.button-marcar-asignatura, button#crearAsignatura, button#crearGrado, button#crearCurso, button#crearFacultad, button#borrarFacultad, button#borrarGrado, button#borrarCurso, button#borrarAsignatura, button#borrarBBDD {
+padding: 10px 15px;
+margin: 8px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+button#todosArchivosUsuario, button#apuntarEvento, button#crearEvento, button[type=submit]#buscar, button#todosArchivos, button#todosEventos, button#todosEventosCreados, button#todosEventosApuntados, button#todosReportes, button#crearAsignatura, button#crearGrado, button#crearCurso, button#crearFacultad, button#borrarFacultad, button#borrarGrado, button#borrarCurso, button#borrarAsignatura {
+background-color: rgb(250, 158, 53);
+color: rgb(33, 56, 158);
+}
+
+button#crearAsignatura, button#crearGrado, button#crearCurso, button#crearFacultad, button#borrarFacultad, button#borrarGrado, button#borrarCurso, button#borrarAsignatura, button#borrarBBDD {
+margin-bottom: 20px;
+}
+
+button.button-marcar-asignatura {
+background-color: black;
+color: white;
+}
+
+div.proximosEventos, div.eventosCreados, div.eventosApuntados, div.ultimosArchivos, div.ultimosReportesArchivos, div.ultimosReportesUsuarios, div.ultimosReportesEventos {
+text-align: center;
+}
+
+input#archivo {
+display: block !important;
+position: relative;
+width: 1px !important;
+height: 1px;
+opacity: 0;
+left: 50px;
+top: 48px;
+}
+
+div.contenido#eventos select {
+padding: 12px 20px !important;
+}
+
+div#camposHoraEvento select {
+width: 85%;
+padding: 12px 20px;
+}
+
+button[type=submit]#buscar:hover {
+background-color: rgb(252, 169, 74);
+}
+
+button[type=submit]#login:hover {
+background-color: rgb(120, 170, 218);
+}
+
+button[type=submit]#registro:hover {
+background-color: rgb(120, 170, 218);
+}
+
+button#examinar:hover, button#subir:hover, button.button-descargar-zip:hover {
+background-color: rgb(120, 170, 218);
+}
+
+div#boton {
+width: 100%;
+text-align: center;
+}
+
+div#link-registro, div#link-login {
+font-size: 13px;
+text-align: center;
+padding: 10px 0px 5px;
+}
+
+div#LoginForm, div#RegisterForm, div#logoutForm {
+display: block;
+text-align: center;
+}
+
+
+form#form-login {
+width: 18%;
+}
+
+form#form-registro {
+width: 20%;
+}
+
+form#form-login, form#form-registro {
+padding: 25px 30px 15px 30px;
+display: inline-block;
+border-style: solid;
+border-color: grey;
+border-radius: 5px;
+margin-left: auto;
+margin-right: auto;
+text-align: left;
+background-color: rgb(84, 209, 192);
+}
+
+div.form-nombreArchivo, div.form-observacionesArchivo, div.form-nombreEvento, div.form-lugarEvento, div.form-fechaEvento, div.form-descripcionEvento {
+width: 80%;
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+}
+
+div.form-nombreArchivo {
+height: 150px;
+}
+
+div.form-observacionesArchivo {
+height: 200px;
+}
+
+form#form-observacionesArchivo {
+height: 150px;
+}
+
+div.contenido#editarArchivo, div.contenido#editarEvento {
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+align-items: center;
+}
+
+fieldset .control {
+width: 100%;
+}
+
+fieldset .grupo-control {
+margin: 5px;
+}
+
+
+fieldset {
+border: 1px solid black;
+width: 80%;
+margin: 0 auto;
+}
+
+legend {
+color: #fff;
+background: #303030;
+border: 1px solid black;
+padding: 2px 6px;
+} 
+
+textarea {
+resize: none;
+}
+
+.editor {
+font-size: 35px;
+cursor: pointer;
+}
+
+/* VALIDACIÓN */
+
+div.contenido#perfil input, div.contenido#perfil input[type=text], div.contenido#perfil input[type=password], div.contenido#perfil input[type=email] {
+padding: 5px 10px !important;
+background-repeat: no-repeat;
+background-attachment: scroll;
+background-color: white !important;
+background-size: 18px !important;
+padding-left: 35px !important;
+}
+
+div.contenido#perfil input#usuarioCambio {
+background-position-x: 9px;
+background-position-y: 5px;
+background-size: 15px !important;
+}
+
+div.contenido#perfil input[type=password] {
+background-position-x: 10px !important;
+background-position-y: 4px !important;
+background-size: 13px !important;
+}
+
+div.contenido#perfil input[type=email] {
+background-position-x: 9.5px !important;
+background-position-y: 7.4px !important;
+background-size: 15px !important;
+}
+
+input#usuarioLogin, input#usuarioRegistro, input#usuarioCambio {
+background: url(../img/validacion/profile.png);
+background-position-x: 8px;
+background-position-y: 10px;
+}
+
+div.contenido#registro input[type=email], div.contenido#perfil input[type=email] {
+background: url(../img/validacion/email.png);
+background-position-x: 8px;
+background-position-y: 13px;
+}
+
+div.contenido#login input[type=password], div.contenido#registro input[type=password] {
+background-position-x: 8.5px !important;
+background-position-y: 9.5px !important;
+background-size: 15px !important;
+}
+
+div.contenido#perfil input[type=password], div.contenido#login input[type=password], div.contenido#registro input[type=password] {
+background: url(../img/validacion/password.png);
+}
+
+div.contenido#login input.icono, div.contenido#registro input.icono, div.contenido#login input[type=password], div.contenido#registro input[type=password], div.contenido#perfil input[type=password], div.contenido#login input[type=email], div.contenido#registro input[type=email], div.contenido#perfil input[type=email] {
+background-repeat: no-repeat;
+background-attachment: scroll;
+background-color: white !important;
+padding-left: 35px !important;
+}
+
+div.contenido#login input.icono, div.contenido#registro input.icono, div.contenido#login input[type=email], div.contenido#registro input[type=email] {
+background-size: 18px !important;
+}
+
+div#divMensajes, div#divMensajes p {
+transition: 1s ease;
+}
+
+div#divMensajes {
+border-style: none;
+}
